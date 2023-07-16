@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.32.2](https://github.com/Koenkk/zigbee2mqtt/compare/1.32.1...1.32.2) (2023-07-16)
+
+
+### Bug Fixes
+
+* Fix not all cluster unbound/bound when specified. https://github.com/Koenkk/zigbee2mqtt/issues/10740 ([0bdf663](https://github.com/Koenkk/zigbee2mqtt/commit/0bdf663ca126d0569b62871e1b787992472faea4))
+* **ignore:** update dependencies ([#18260](https://github.com/Koenkk/zigbee2mqtt/issues/18260)) ([ee1a5f0](https://github.com/Koenkk/zigbee2mqtt/commit/ee1a5f04008beaac54fb68e20c31c1664563a4f2))
+* **ignore:** update zigbee-herdsman to 0.17.2 ([#18291](https://github.com/Koenkk/zigbee2mqtt/issues/18291)) ([073989c](https://github.com/Koenkk/zigbee2mqtt/commit/073989c7a434c3fd73abaee95fa4ada9394d695d))
+* **ignore:** update zigbee-herdsman-converters to 15.38.0 ([#18262](https://github.com/Koenkk/zigbee2mqtt/issues/18262)) ([813dd49](https://github.com/Koenkk/zigbee2mqtt/commit/813dd49a41e7d3f41b6c79db708bb08d29cd7f0c))
+* **ignore:** update zigbee-herdsman-converters to 15.39.0 ([#18282](https://github.com/Koenkk/zigbee2mqtt/issues/18282)) ([3c855d2](https://github.com/Koenkk/zigbee2mqtt/commit/3c855d20424761d43ace9b5ed55460eedce092f0))
+* **ignore:** update zigbee-herdsman-converters to 15.39.1 ([#18292](https://github.com/Koenkk/zigbee2mqtt/issues/18292)) ([a3c8e1c](https://github.com/Koenkk/zigbee2mqtt/commit/a3c8e1c3c98bd97ef52c29929dc9bb5f9598d0fd))
+* **ignore:** update zigbee-herdsman-converters to 15.40.0 ([#18314](https://github.com/Koenkk/zigbee2mqtt/issues/18314)) ([af0521b](https://github.com/Koenkk/zigbee2mqtt/commit/af0521b54ca9195e62d68ccd9fcb49d0d0c226e4))
+* **ignore:** update zigbee-herdsman-converters to 15.41.0 ([#18328](https://github.com/Koenkk/zigbee2mqtt/issues/18328)) ([330a913](https://github.com/Koenkk/zigbee2mqtt/commit/330a913e76b556295f57290743670a40e48139ca))
+* **ignore:** update zigbee2mqtt-frontend to 0.6.132 ([#18289](https://github.com/Koenkk/zigbee2mqtt/issues/18289)) ([05eff95](https://github.com/Koenkk/zigbee2mqtt/commit/05eff957eb3c5414df7bf2909b5b6d9ff6fdb258))
+* Use HA sensor device class `atmospheric_pressure` instead of `pressure` ([#18306](https://github.com/Koenkk/zigbee2mqtt/issues/18306)) ([1252f10](https://github.com/Koenkk/zigbee2mqtt/commit/1252f10d39beed640370410a45d5c2fdc504b440))
+
 ## [1.32.1](https://github.com/Koenkk/zigbee2mqtt/compare/1.32.0...1.32.1) (2023-07-08)
 
 ### Bug Fixes
