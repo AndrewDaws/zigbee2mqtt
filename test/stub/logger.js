@@ -1,5 +1,6 @@
 let level = 'info';
 let debugNamespaceIgnore = '';
+let namespacedLevels = {};
 
 let transports = [];
 
@@ -10,7 +11,7 @@ const callTransports = (level, message, namespace) => {
             transport.log({level, message, namespace}, () => {});
         }
     }
-}
+};
 
 const mock = {
     init: jest.fn(),
@@ -25,14 +26,24 @@ const mock = {
     removeTransport: (transport) => {
         transports = transports.filter((t) => t !== transport);
     },
-    setLevel: (newLevel) => {level = newLevel},
+    setLevel: (newLevel) => {
+        level = newLevel;
+    },
     getLevel: () => level,
-    setDebugNamespaceIgnore: (newIgnore) => {debugNamespaceIgnore = newIgnore},
+    setNamespacedLevels: (nsLevels) => {
+        namespacedLevels = nsLevels;
+    },
+    getNamespacedLevels: () => namespacedLevels,
+    setDebugNamespaceIgnore: (newIgnore) => {
+        debugNamespaceIgnore = newIgnore;
+    },
     getDebugNamespaceIgnore: () => debugNamespaceIgnore,
-    setTransportsEnabled: (value) => {transportsEnabled = value},
+    setTransportsEnabled: (value) => {
+        transportsEnabled = value;
+    },
     end: jest.fn(),
 };
 
-jest.mock('../../lib/util/logger', () => (mock));
+jest.mock('../../lib/util/logger', () => mock);
 
 module.exports = {...mock};
